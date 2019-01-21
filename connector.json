@@ -1,0 +1,13 @@
+{
+  "name": "contract-events",
+  "config": {
+    "connector.class": "io.confluent.connect.elasticsearch.ElasticsearchSinkConnector",
+    "tasks.max": "1",
+    "topics": "contract-events",
+    "key.ignore": "true",
+    "schema.ignore": "true",
+    "connection.url": "http://elasticsearch:9200",
+    "type.name": "test-type",
+    "name": "elasticsearch-sink"
+  }
+}

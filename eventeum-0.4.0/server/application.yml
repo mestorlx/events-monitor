@@ -1,0 +1,85 @@
+eventFilters:
+  - id: OceanMarketAssetRegistered
+    contractAddress: ${CONTRACT_ADDRESS:0xeeb3a6143b71b9ebc867479f2cf57db0be4604c2}
+    eventSpecification:
+      eventName: AssetRegistered
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: ADDRESS
+      # nonIndexedParameterDefinitions:
+    correlationId:
+        type: INDEXED_PARAMETER
+        index: 0
+  - id: OceanMarketFrequentTokenRequest
+    contractAddress: ${CONTRACT_ADDRESS:0xeeb3a6143b71b9ebc867479f2cf57db0be4604c2}
+    eventSpecification:
+      eventName: FrequentTokenRequest
+      indexedParameterDefinitions:
+        - position: 0
+          type: ADDRESS
+      nonIndexedParameterDefinitions:
+        - position: 1
+          type: UINT256
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: OceanMarketLimitTokenRequest
+    contractAddress: ${CONTRACT_ADDRESS:0xeeb3a6143b71b9ebc867479f2cf57db0be4604c2}
+    eventSpecification:
+      eventName: LimitTokenRequest
+      indexedParameterDefinitions:
+        - position: 0
+          type: ADDRESS
+      nonIndexedParameterDefinitions:
+        - position: 1
+          type: UINT256
+        - position: 2
+          type: UINT256
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: OceanMarketPaymentReceived
+    contractAddress: ${CONTRACT_ADDRESS:0xeeb3a6143b71b9ebc867479f2cf57db0be4604c2}
+    eventSpecification:
+      eventName: PaymentReceived
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: ADDRESS
+      nonIndexedParameterDefinitions:
+        - position: 2
+          type: UINT256
+        - position: 3
+          type: UINT256
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: OceanMarketPaymentReleased
+    contractAddress: ${CONTRACT_ADDRESS:0xeeb3a6143b71b9ebc867479f2cf57db0be4604c2}
+    eventSpecification:
+      eventName: PaymentReleased
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: ADDRESS
+      # nonIndexedParameterDefinitions:
+    correlationId:
+        type: INDEXED_PARAMETER
+        index: 0
+  - id: OceanMarketPaymentRefunded
+    contractAddress: ${CONTRACT_ADDRESS:0xeeb3a6143b71b9ebc867479f2cf57db0be4604c2}
+    eventSpecification:
+      eventName: PaymentRefunded
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: ADDRESS
+      # nonIndexedParameterDefinitions:
+    correlationId:
+        type: INDEXED_PARAMETER
+        index: 0
