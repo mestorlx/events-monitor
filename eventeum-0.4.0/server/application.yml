@@ -1,6 +1,27 @@
 eventFilters:
+  - id: DIDRegistryDIDAttributeRegistered
+    contractAddress: ${CONTRACT_ADDRESS:0x410f6d3cfea2a18ba5080590b4c879c8addc8a05}
+    eventSpecification:
+      eventName: DIDAttributeRegistered
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: ADDRESS
+        - position: 2
+          type: BYTES32
+      nonIndexedParameterDefinitions:
+        - position: 3
+          type: STRING
+        - position: 4
+          type: UINT8
+        - position: 5
+          type: UINT256
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
   - id: OceanMarketAssetRegistered
-    contractAddress: ${CONTRACT_ADDRESS:0xeeb3a6143b71b9ebc867479f2cf57db0be4604c2}
+    contractAddress: ${CONTRACT_ADDRESS:0x2d037fc1b12628862724288da7ee7da6c6445f1d}
     eventSpecification:
       eventName: AssetRegistered
       indexedParameterDefinitions:
@@ -13,7 +34,7 @@ eventFilters:
         type: INDEXED_PARAMETER
         index: 0
   - id: OceanMarketFrequentTokenRequest
-    contractAddress: ${CONTRACT_ADDRESS:0xeeb3a6143b71b9ebc867479f2cf57db0be4604c2}
+    contractAddress: ${CONTRACT_ADDRESS:0x2d037fc1b12628862724288da7ee7da6c6445f1d}
     eventSpecification:
       eventName: FrequentTokenRequest
       indexedParameterDefinitions:
@@ -26,7 +47,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: OceanMarketLimitTokenRequest
-    contractAddress: ${CONTRACT_ADDRESS:0xeeb3a6143b71b9ebc867479f2cf57db0be4604c2}
+    contractAddress: ${CONTRACT_ADDRESS:0x2d037fc1b12628862724288da7ee7da6c6445f1d}
     eventSpecification:
       eventName: LimitTokenRequest
       indexedParameterDefinitions:
@@ -41,7 +62,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: OceanMarketPaymentReceived
-    contractAddress: ${CONTRACT_ADDRESS:0xeeb3a6143b71b9ebc867479f2cf57db0be4604c2}
+    contractAddress: ${CONTRACT_ADDRESS:0x2d037fc1b12628862724288da7ee7da6c6445f1d}
     eventSpecification:
       eventName: PaymentReceived
       indexedParameterDefinitions:
@@ -58,7 +79,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: OceanMarketPaymentReleased
-    contractAddress: ${CONTRACT_ADDRESS:0xeeb3a6143b71b9ebc867479f2cf57db0be4604c2}
+    contractAddress: ${CONTRACT_ADDRESS:0x2d037fc1b12628862724288da7ee7da6c6445f1d}
     eventSpecification:
       eventName: PaymentReleased
       indexedParameterDefinitions:
@@ -71,7 +92,7 @@ eventFilters:
         type: INDEXED_PARAMETER
         index: 0
   - id: OceanMarketPaymentRefunded
-    contractAddress: ${CONTRACT_ADDRESS:0xeeb3a6143b71b9ebc867479f2cf57db0be4604c2}
+    contractAddress: ${CONTRACT_ADDRESS:0x2d037fc1b12628862724288da7ee7da6c6445f1d}
     eventSpecification:
       eventName: PaymentRefunded
       indexedParameterDefinitions:
@@ -80,6 +101,299 @@ eventFilters:
         - position: 1
           type: ADDRESS
       # nonIndexedParameterDefinitions:
+    correlationId:
+        type: INDEXED_PARAMETER
+        index: 0
+# ==========
+  - id: OceanAuthAccessConsentRequested
+    contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
+    eventSpecification:
+      eventName: AccessConsentRequested
+      indexedParameterDefinitions:
+        - position: 1
+          type: ADDRESS
+        - position: 2
+          type: ADDRESS
+        - position: 3
+          type: BYTES32
+      nonIndexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 4
+          type: UINT256
+        - position: 5
+          type: STRING
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: OceanAuthAccessRequestCommitted
+    contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
+    eventSpecification:
+      eventName: AccessRequestCommitted
+      indexedParameterDefinitions:
+        - position: 0
+          type: ADDRESS
+      nonIndexedParameterDefinitions:
+        - position: 1
+          type: UINT256
+        - position: 2
+          type: STRING
+        - position: 3
+          type: STRING
+        - position: 4
+          type: STRING
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: OceanAuthAccessRequestRejected
+    contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
+    eventSpecification:
+      eventName: AccessRequestRejected
+      indexedParameterDefinitions:
+        - position: 0
+          type: ADDRESS
+        - position: 1
+          type: ADDRESS
+        - position: 2
+          type: BYTES32
+    correlationId:
+        type: INDEXED_PARAMETER
+        index: 0
+  - id: OceanAuthAccessRequestRevoked
+    contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
+    eventSpecification:
+      eventName: AccessRequestRevoked
+      indexedParameterDefinitions:
+        - position: 0
+          type: ADDRESS
+        - position: 1
+          type: ADDRESS
+        - position: 2
+          type: BYTES32
+    correlationId:
+        type: INDEXED_PARAMETER
+        index: 0
+  - id: OceanAuthEncryptedTokenPublished
+    contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
+    eventSpecification:
+      eventName: EncryptedTokenPublished
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+      nonIndexedParameterDefinitions:
+        - position: 1
+          type: BYTES32
+    correlationId:
+        type: INDEXED_PARAMETER
+        index: 0
+  - id: OceanAuthAccessRequestDelivered
+    contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
+    eventSpecification:
+      eventName: AccessRequestDelivered
+      indexedParameterDefinitions:
+        - position: 0
+          type: ADDRESS
+        - position: 1
+          type: ADDRESS
+        - position: 2
+          type: BYTES32
+    correlationId:
+        type: INDEXED_PARAMETER
+        index: 0
+  #event with bytes not supported?
+  - id: AccessConditionsAccessGranted
+    contractAddress: ${CONTRACT_ADDRESS:0x1cf1c7f97fa8c64deb1fe52239d5f770b1d90b41}
+    eventSpecification:
+      eventName: AccessGranted
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: BYTES32
+    correlationId:
+        type: INDEXED_PARAMETER
+        index: 0
+  - id: ComputeConditionsHashSignatureSubmitted
+    contractAddress: ${CONTRACT_ADDRESS:0x0f896e953c17964ad3885157b2563398b86baec7}
+    eventSpecification:
+      eventName: HashSignatureSubmitted
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: ADDRESS
+        - position: 2
+          type: ADDRESS
+      nonIndexedParameterDefinitions:
+        - position: 3
+          type: UINT8
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: ComputeConditionsHashSubmitted
+    contractAddress: ${CONTRACT_ADDRESS:0x0f896e953c17964ad3885157b2563398b86baec7}
+    eventSpecification:
+      eventName: HashSubmitted
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: ADDRESS
+        - position: 2
+          type: ADDRESS
+      nonIndexedParameterDefinitions:
+        - position: 3
+          type: UINT8
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: ComputeConditionsProofOfUploadValid
+    contractAddress: ${CONTRACT_ADDRESS:0x0f896e953c17964ad3885157b2563398b86baec7}
+    eventSpecification:
+      eventName: ProofOfUploadValid
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: ADDRESS
+        - position: 2
+          type: ADDRESS
+    correlationId:
+        type: INDEXED_PARAMETER
+        index: 0
+  - id: ComputeConditionsProofOfUploadValid
+    contractAddress: ${CONTRACT_ADDRESS:0x0f896e953c17964ad3885157b2563398b86baec7}
+    eventSpecification:
+      eventName: ProofOfUploadValid
+      nonIndexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: ADDRESS
+        - position: 2
+          type: ADDRESS
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+
+  - id: FitchainConditionsVerifierRegistered
+    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    eventSpecification:
+      eventName: VerifierRegistered
+      indexedParameterDefinitions:
+        - position: 0
+          type: address
+      nonIndexedParameterDefinitions:
+        - position: 1
+          type: uint256
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: FitchainConditionsVerifierDeregistered
+    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    eventSpecification:
+      eventName: VerifierDeregistered
+      indexedParameterDefinitions:
+        - position: 0
+          type: address
+    correlationId:
+        type: INDEXED_PARAMETER
+        index: 0
+  - id: FitchainConditionsVerifierElected
+    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    eventSpecification:
+      eventName: VerifierElected
+      indexedParameterDefinitions:
+        - position: 0
+          type: address
+        - position: 0
+          type: bytes32
+    correlationId:
+        type: INDEXED_PARAMETER
+        index: 0
+  - id: FitchainConditionsPoTInitialized
+    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    eventSpecification:
+      eventName: PoTInitialized
+      nonIndexedParameterDefinitions:
+        - position: 0
+          type: UINT8
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: FitchainConditionsVPCInitialized
+    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    eventSpecification:
+      eventName: VPCInitialized
+      nonIndexedParameterDefinitions:
+        - position: 0
+          type: UINT8
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: FitchainConditionsVerificationConditionState
+    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    eventSpecification:
+      eventName: VerificationConditionState
+      indexedParameterDefinitions:
+        - position: 0
+          type: bytes32
+      nonIndexedParameterDefinitions:
+        - position: 1
+          type: UINT8
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: FitchainConditionsTrainingConditionState
+    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    eventSpecification:
+      eventName: TrainingConditionState
+      indexedParameterDefinitions:
+        - position: 0
+          type: bytes32
+      nonIndexedParameterDefinitions:
+        - position: 1
+          type: UINT8
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: FitchainConditionsFreedSlots
+    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    eventSpecification:
+      eventName: FreedSlots
+      indexedParameterDefinitions:
+        - position: 0
+          type: address
+      nonIndexedParameterDefinitions:
+        - position: 1
+          type: UINT256
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: FitchainConditionsFreedSlots
+    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    eventSpecification:
+      eventName: FreedSlots
+      indexedParameterDefinitions:
+        - position: 0
+          type: address
+      nonIndexedParameterDefinitions:
+        - position: 1
+          type: UINT256
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: FitchainConditionsVotesSubmitted
+    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    eventSpecification:
+      eventName: VotesSubmitted
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: address
+        - position: 2
+          type: UINT256
     correlationId:
         type: INDEXED_PARAMETER
         index: 0
