@@ -38,13 +38,17 @@ Tools, Documentation and Scripts to run the events monitoring tool
     $sudo sysctl -w vm.max_map_count=262144
     ```
     After that restart elastic search, kafka connect and kibana
-5. Compile, test and package `eventeum`
+5. Add a kibana dashboard. This sample dashboard will show an histogram of events emitted.
+    ```terminal
+    $curl -v POST localhost:5601/api/kibana/dashboards/import  -H 'kbn-xsrf:true' --header 'Content-type:application/json' -d @visualization.json
+    ```
+6. Compile, test and package `eventeum`
     ```terminal
     $cd eventeum-0.4.0
     $mvn clean package
     ```
-6. update `OceanMarket` address in `eventeum-0.4.0/server/application.yml` with the proxy address it can be taken from `zos.dev-*.json` under `"oceanprotocol/OceanMarket":` or from the terminal where the deployment script was executed.
-7. run eventeum
+7. update `KeeperContracts` addresses in `eventeum-0.4.0/server/application.yml` with the proxy address it can be taken from `zos.dev-*.json` under `"oceanprotocol/ContractName":` or from the terminal where the deployment script was executed.
+8. run eventeum
     ```terminal
     $export SPRING_DATA_MONGODB_HOST=localhost:27017
     $export ETHEREUM_NODE_URL=http://localhost:8545
@@ -71,8 +75,7 @@ Tools, Documentation and Scripts to run the events monitoring tool
     ```terminal
     $kafka-console-consumer.sh --zookeeper zookeeper:2181 --from-beginning --topic contract-events
     ```
-You can now test kibana going to `localhost:5601` and create index pattern with
-`contract-events`
+You can now test kibana going to `localhost:5601`
 
 You will se no events. To test events use truffle console from `keeper-contracts` folder as follow
 
