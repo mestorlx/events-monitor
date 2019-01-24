@@ -1,6 +1,6 @@
 eventFilters:
   - id: DIDRegistryDIDAttributeRegistered
-    contractAddress: ${CONTRACT_ADDRESS:0x410f6d3cfea2a18ba5080590b4c879c8addc8a05}
+    contractAddress: ${CONTRACT_ADDRESS:0x3cBCAaB6b5223136d21E1Aad37Db25bB01D1A603}
     eventSpecification:
       eventName: DIDAttributeRegistered
       indexedParameterDefinitions:
@@ -21,7 +21,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: OceanMarketAssetRegistered
-    contractAddress: ${CONTRACT_ADDRESS:0x2d037fc1b12628862724288da7ee7da6c6445f1d}
+    contractAddress: ${CONTRACT_ADDRESS:0x551f2854E4C7cBD954B5DBdddE902F8A04A16435}
     eventSpecification:
       eventName: AssetRegistered
       indexedParameterDefinitions:
@@ -33,7 +33,7 @@ eventFilters:
         type: INDEXED_PARAMETER
         index: 0
   - id: OceanMarketFrequentTokenRequest
-    contractAddress: ${CONTRACT_ADDRESS:0x2d037fc1b12628862724288da7ee7da6c6445f1d}
+    contractAddress: ${CONTRACT_ADDRESS:0x551f2854E4C7cBD954B5DBdddE902F8A04A16435}
     eventSpecification:
       eventName: FrequentTokenRequest
       indexedParameterDefinitions:
@@ -46,7 +46,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: OceanMarketLimitTokenRequest
-    contractAddress: ${CONTRACT_ADDRESS:0x2d037fc1b12628862724288da7ee7da6c6445f1d}
+    contractAddress: ${CONTRACT_ADDRESS:0x551f2854E4C7cBD954B5DBdddE902F8A04A16435}
     eventSpecification:
       eventName: LimitTokenRequest
       indexedParameterDefinitions:
@@ -61,7 +61,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: OceanMarketPaymentReceived
-    contractAddress: ${CONTRACT_ADDRESS:0x2d037fc1b12628862724288da7ee7da6c6445f1d}
+    contractAddress: ${CONTRACT_ADDRESS:0x551f2854E4C7cBD954B5DBdddE902F8A04A16435}
     eventSpecification:
       eventName: PaymentReceived
       indexedParameterDefinitions:
@@ -78,7 +78,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: OceanMarketPaymentReleased
-    contractAddress: ${CONTRACT_ADDRESS:0x2d037fc1b12628862724288da7ee7da6c6445f1d}
+    contractAddress: ${CONTRACT_ADDRESS:0x551f2854E4C7cBD954B5DBdddE902F8A04A16435}
     eventSpecification:
       eventName: PaymentReleased
       indexedParameterDefinitions:
@@ -90,7 +90,7 @@ eventFilters:
         type: INDEXED_PARAMETER
         index: 0
   - id: OceanMarketPaymentRefunded
-    contractAddress: ${CONTRACT_ADDRESS:0x2d037fc1b12628862724288da7ee7da6c6445f1d}
+    contractAddress: ${CONTRACT_ADDRESS:0x551f2854E4C7cBD954B5DBdddE902F8A04A16435}
     eventSpecification:
       eventName: PaymentRefunded
       indexedParameterDefinitions:
@@ -102,7 +102,7 @@ eventFilters:
         type: INDEXED_PARAMETER
         index: 0
   - id: OceanAuthAccessConsentRequested
-    contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
+    contractAddress: ${CONTRACT_ADDRESS:0x8fE425e8EAe09aA65511186eab2F6a4D07f123A1}
     eventSpecification:
       eventName: AccessConsentRequested
       indexedParameterDefinitions:
@@ -123,7 +123,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: OceanAuthAccessRequestCommitted
-    contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
+    contractAddress: ${CONTRACT_ADDRESS:0x8fE425e8EAe09aA65511186eab2F6a4D07f123A1}
     eventSpecification:
       eventName: AccessRequestCommitted
       indexedParameterDefinitions:
@@ -142,7 +142,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: OceanAuthAccessRequestRejected
-    contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
+    contractAddress: ${CONTRACT_ADDRESS:0x8fE425e8EAe09aA65511186eab2F6a4D07f123A1}
     eventSpecification:
       eventName: AccessRequestRejected
       indexedParameterDefinitions:
@@ -156,7 +156,7 @@ eventFilters:
         type: INDEXED_PARAMETER
         index: 0
   - id: OceanAuthAccessRequestRevoked
-    contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
+    contractAddress: ${CONTRACT_ADDRESS:0x8fE425e8EAe09aA65511186eab2F6a4D07f123A1}
     eventSpecification:
       eventName: AccessRequestRevoked
       indexedParameterDefinitions:
@@ -170,7 +170,7 @@ eventFilters:
         type: INDEXED_PARAMETER
         index: 0
   - id: OceanAuthEncryptedTokenPublished
-    contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
+    contractAddress: ${CONTRACT_ADDRESS:0x8fE425e8EAe09aA65511186eab2F6a4D07f123A1}
     eventSpecification:
       eventName: EncryptedTokenPublished
       indexedParameterDefinitions:
@@ -183,7 +183,7 @@ eventFilters:
         type: INDEXED_PARAMETER
         index: 0
   - id: OceanAuthAccessRequestDelivered
-    contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
+    contractAddress: ${CONTRACT_ADDRESS:0x8fE425e8EAe09aA65511186eab2F6a4D07f123A1}
     eventSpecification:
       eventName: AccessRequestDelivered
       indexedParameterDefinitions:
@@ -197,7 +197,7 @@ eventFilters:
         type: INDEXED_PARAMETER
         index: 0
   - id: AccessConditionsAccessGranted
-    contractAddress: ${CONTRACT_ADDRESS:0x1cf1c7f97fa8c64deb1fe52239d5f770b1d90b41}
+    contractAddress: ${CONTRACT_ADDRESS:0xD82184412E6bbe2F737A35867ec6242A477ca440}
     eventSpecification:
       eventName: AccessGranted
       indexedParameterDefinitions:
@@ -209,7 +209,7 @@ eventFilters:
         type: INDEXED_PARAMETER
         index: 0
   - id: ComputeConditionsHashSignatureSubmitted
-    contractAddress: ${CONTRACT_ADDRESS:0x0f896e953c17964ad3885157b2563398b86baec7}
+    contractAddress: ${CONTRACT_ADDRESS:0xFC11E68470bd76cBA31A63861ac6c615B0A04e0F}
     eventSpecification:
       eventName: HashSignatureSubmitted
       indexedParameterDefinitions:
@@ -226,7 +226,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: ComputeConditionsHashSubmitted
-    contractAddress: ${CONTRACT_ADDRESS:0x0f896e953c17964ad3885157b2563398b86baec7}
+    contractAddress: ${CONTRACT_ADDRESS:0xFC11E68470bd76cBA31A63861ac6c615B0A04e0F}
     eventSpecification:
       eventName: HashSubmitted
       indexedParameterDefinitions:
@@ -243,7 +243,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: ComputeConditionsProofOfUploadValid
-    contractAddress: ${CONTRACT_ADDRESS:0x0f896e953c17964ad3885157b2563398b86baec7}
+    contractAddress: ${CONTRACT_ADDRESS:0xFC11E68470bd76cBA31A63861ac6c615B0A04e0F}
     eventSpecification:
       eventName: ProofOfUploadValid
       indexedParameterDefinitions:
@@ -257,7 +257,7 @@ eventFilters:
         type: INDEXED_PARAMETER
         index: 0
   - id: ComputeConditionsProofOfUploadValid
-    contractAddress: ${CONTRACT_ADDRESS:0x0f896e953c17964ad3885157b2563398b86baec7}
+    contractAddress: ${CONTRACT_ADDRESS:0xFC11E68470bd76cBA31A63861ac6c615B0A04e0F}
     eventSpecification:
       eventName: ProofOfUploadValid
       nonIndexedParameterDefinitions:
@@ -270,9 +270,8 @@ eventFilters:
     correlationId:
         type: NON_INDEXED_PARAMETER
         index: 0
-
   - id: FitchainConditionsVerifierRegistered
-    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    contractAddress: ${CONTRACT_ADDRESS:0xC840aEf9090018F804C6e598610accD786E5EfCB}
     eventSpecification:
       eventName: VerifierRegistered
       indexedParameterDefinitions:
@@ -285,7 +284,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: FitchainConditionsVerifierDeregistered
-    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    contractAddress: ${CONTRACT_ADDRESS:0xC840aEf9090018F804C6e598610accD786E5EfCB}
     eventSpecification:
       eventName: VerifierDeregistered
       indexedParameterDefinitions:
@@ -295,7 +294,7 @@ eventFilters:
         type: INDEXED_PARAMETER
         index: 0
   - id: FitchainConditionsVerifierElected
-    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    contractAddress: ${CONTRACT_ADDRESS:0xC840aEf9090018F804C6e598610accD786E5EfCB}
     eventSpecification:
       eventName: VerifierElected
       indexedParameterDefinitions:
@@ -307,7 +306,7 @@ eventFilters:
         type: INDEXED_PARAMETER
         index: 0
   - id: FitchainConditionsPoTInitialized
-    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    contractAddress: ${CONTRACT_ADDRESS:0xC840aEf9090018F804C6e598610accD786E5EfCB}
     eventSpecification:
       eventName: PoTInitialized
       nonIndexedParameterDefinitions:
@@ -317,7 +316,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: FitchainConditionsVPCInitialized
-    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    contractAddress: ${CONTRACT_ADDRESS:0xC840aEf9090018F804C6e598610accD786E5EfCB}
     eventSpecification:
       eventName: VPCInitialized
       nonIndexedParameterDefinitions:
@@ -327,7 +326,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: FitchainConditionsVerificationConditionState
-    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    contractAddress: ${CONTRACT_ADDRESS:0xC840aEf9090018F804C6e598610accD786E5EfCB}
     eventSpecification:
       eventName: VerificationConditionState
       indexedParameterDefinitions:
@@ -340,7 +339,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: FitchainConditionsTrainingConditionState
-    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    contractAddress: ${CONTRACT_ADDRESS:0xC840aEf9090018F804C6e598610accD786E5EfCB}
     eventSpecification:
       eventName: TrainingConditionState
       indexedParameterDefinitions:
@@ -353,7 +352,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: FitchainConditionsFreedSlots
-    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    contractAddress: ${CONTRACT_ADDRESS:0xC840aEf9090018F804C6e598610accD786E5EfCB}
     eventSpecification:
       eventName: FreedSlots
       indexedParameterDefinitions:
@@ -366,7 +365,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: FitchainConditionsFreedSlots
-    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    contractAddress: ${CONTRACT_ADDRESS:0xC840aEf9090018F804C6e598610accD786E5EfCB}
     eventSpecification:
       eventName: FreedSlots
       indexedParameterDefinitions:
@@ -379,7 +378,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: FitchainConditionsVotesSubmitted
-    contractAddress: ${CONTRACT_ADDRESS:0x3298a947b35ae504df49534998203e355f7b7d30}
+    contractAddress: ${CONTRACT_ADDRESS:0xC840aEf9090018F804C6e598610accD786E5EfCB}
     eventSpecification:
       eventName: VotesSubmitted
       indexedParameterDefinitions:
@@ -393,7 +392,7 @@ eventFilters:
         type: INDEXED_PARAMETER
         index: 0
   - id: PaymentConditionsPaymentLocked
-    contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
+    contractAddress: ${CONTRACT_ADDRESS:0x8fE425e8EAe09aA65511186eab2F6a4D07f123A1}
     eventSpecification:
       eventName: PaymentLocked
       indexedParameterDefinitions:
@@ -410,7 +409,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: PaymentConditionsPaymentReleased
-    contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
+    contractAddress: ${CONTRACT_ADDRESS:0x8fE425e8EAe09aA65511186eab2F6a4D07f123A1}
     eventSpecification:
       eventName: PaymentReleased
       indexedParameterDefinitions:
@@ -427,7 +426,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: PaymentConditionsPaymentRefund
-    contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
+    contractAddress: ${CONTRACT_ADDRESS:0x8fE425e8EAe09aA65511186eab2F6a4D07f123A1}
     eventSpecification:
       eventName: PaymentRefund
       indexedParameterDefinitions:
@@ -444,7 +443,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: ServiceAgreementSetupCondition
-    contractAddress: ${CONTRACT_ADDRESS:0x463879d3a318a6f692e00165fa4fd9461265b98a}
+    contractAddress: ${CONTRACT_ADDRESS:0x2243B639CBD840c88600506f257f56429235c8D8}
     eventSpecification:
       eventName: SetupCondition
       indexedParameterDefinitions:
@@ -458,7 +457,7 @@ eventFilters:
         type: INDEXED_PARAMETER
         index: 0
   - id: ServiceAgreementSetupAgreementTemplate
-    contractAddress: ${CONTRACT_ADDRESS:0x463879d3a318a6f692e00165fa4fd9461265b98a}
+    contractAddress: ${CONTRACT_ADDRESS:0x2243B639CBD840c88600506f257f56429235c8D8}
     eventSpecification:
       eventName: SetupAgreementTemplate
       indexedParameterDefinitions:
@@ -470,7 +469,7 @@ eventFilters:
         type: INDEXED_PARAMETER
         index: 0
   - id: ServiceAgreementExecuteCondition
-    contractAddress: ${CONTRACT_ADDRESS:0x463879d3a318a6f692e00165fa4fd9461265b98a}
+    contractAddress: ${CONTRACT_ADDRESS:0x2243B639CBD840c88600506f257f56429235c8D8}
     eventSpecification:
       eventName: ExecuteCondition
       indexedParameterDefinitions:
@@ -491,7 +490,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: ServiceAgreementExecuteAgreement
-    contractAddress: ${CONTRACT_ADDRESS:0x463879d3a318a6f692e00165fa4fd9461265b98a}
+    contractAddress: ${CONTRACT_ADDRESS:0x2243B639CBD840c88600506f257f56429235c8D8}
     eventSpecification:
       eventName: ExecuteAgreement
       indexedParameterDefinitions:
@@ -514,7 +513,7 @@ eventFilters:
         type: NON_INDEXED_PARAMETER
         index: 0
   - id: ServiceAgreementConditionFulfilled
-    contractAddress: ${CONTRACT_ADDRESS:0x463879d3a318a6f692e00165fa4fd9461265b98a}
+    contractAddress: ${CONTRACT_ADDRESS:0x2243B639CBD840c88600506f257f56429235c8D8}
     eventSpecification:
       eventName: ConditionFulfilled
       indexedParameterDefinitions:
@@ -528,7 +527,7 @@ eventFilters:
         type: INDEXED_PARAMETER
         index: 0
   - id: ServiceAgreementAgreementFulfilled
-    contractAddress: ${CONTRACT_ADDRESS:0x463879d3a318a6f692e00165fa4fd9461265b98a}
+    contractAddress: ${CONTRACT_ADDRESS:0x2243B639CBD840c88600506f257f56429235c8D8}
     eventSpecification:
       eventName: AgreementFulfilled
       indexedParameterDefinitions:
@@ -542,7 +541,7 @@ eventFilters:
         type: INDEXED_PARAMETER
         index: 0
   - id: ServiceAgreementSLATemplateRevoked
-    contractAddress: ${CONTRACT_ADDRESS:0x463879d3a318a6f692e00165fa4fd9461265b98a}
+    contractAddress: ${CONTRACT_ADDRESS:0x2243B639CBD840c88600506f257f56429235c8D8}
     eventSpecification:
       eventName: SLATemplateRevoked
       indexedParameterDefinitions:
@@ -554,4 +553,3 @@ eventFilters:
     correlationId:
         type: INDEXED_PARAMETER
         index: 0
-
