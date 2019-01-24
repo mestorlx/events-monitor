@@ -29,7 +29,6 @@ eventFilters:
           type: BYTES32
         - position: 1
           type: ADDRESS
-      # nonIndexedParameterDefinitions:
     correlationId:
         type: INDEXED_PARAMETER
         index: 0
@@ -87,7 +86,6 @@ eventFilters:
           type: BYTES32
         - position: 1
           type: ADDRESS
-      # nonIndexedParameterDefinitions:
     correlationId:
         type: INDEXED_PARAMETER
         index: 0
@@ -100,11 +98,9 @@ eventFilters:
           type: BYTES32
         - position: 1
           type: ADDRESS
-      # nonIndexedParameterDefinitions:
     correlationId:
         type: INDEXED_PARAMETER
         index: 0
-# ==========
   - id: OceanAuthAccessConsentRequested
     contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
     eventSpecification:
@@ -200,7 +196,6 @@ eventFilters:
     correlationId:
         type: INDEXED_PARAMETER
         index: 0
-  #event with bytes not supported?
   - id: AccessConditionsAccessGranted
     contractAddress: ${CONTRACT_ADDRESS:0x1cf1c7f97fa8c64deb1fe52239d5f770b1d90b41}
     eventSpecification:
@@ -397,3 +392,166 @@ eventFilters:
     correlationId:
         type: INDEXED_PARAMETER
         index: 0
+  - id: PaymentConditionsPaymentLocked
+    contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
+    eventSpecification:
+      eventName: PaymentLocked
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: address
+        - position: 2
+          type: address
+      nonIndexedParameterDefinitions:
+        - position: 3
+          type: uint256
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: PaymentConditionsPaymentReleased
+    contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
+    eventSpecification:
+      eventName: PaymentReleased
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: address
+        - position: 2
+          type: address
+      nonIndexedParameterDefinitions:
+        - position: 3
+          type: uint256
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: PaymentConditionsPaymentRefund
+    contractAddress: ${CONTRACT_ADDRESS:0x6babdbffb93dee35243db0568cbd24fffb6a6ae2}
+    eventSpecification:
+      eventName: PaymentRefund
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: address
+        - position: 2
+          type: address
+      nonIndexedParameterDefinitions:
+        - position: 3
+          type: uint256
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: ServiceAgreementSetupCondition
+    contractAddress: ${CONTRACT_ADDRESS:0x463879d3a318a6f692e00165fa4fd9461265b98a}
+    eventSpecification:
+      eventName: SetupCondition
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: BYTES32
+        - position: 2
+          type: address
+    correlationId:
+        type: INDEXED_PARAMETER
+        index: 0
+  - id: ServiceAgreementSetupAgreementTemplate
+    contractAddress: ${CONTRACT_ADDRESS:0x463879d3a318a6f692e00165fa4fd9461265b98a}
+    eventSpecification:
+      eventName: SetupAgreementTemplate
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: address
+    correlationId:
+        type: INDEXED_PARAMETER
+        index: 0
+  - id: ServiceAgreementExecuteCondition
+    contractAddress: ${CONTRACT_ADDRESS:0x463879d3a318a6f692e00165fa4fd9461265b98a}
+    eventSpecification:
+      eventName: ExecuteCondition
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: BYTES32
+        - position: 2
+          type: BYTES32
+    nonIndexedParameterDefinitions:
+        - position: 3
+          type: UINT8
+        - position: 4
+          type: ADDRESS
+        - position: 5
+          type: ADDRESS
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: ServiceAgreementExecuteAgreement
+    contractAddress: ${CONTRACT_ADDRESS:0x463879d3a318a6f692e00165fa4fd9461265b98a}
+    eventSpecification:
+      eventName: ExecuteAgreement
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: BYTES32
+        - position: 2
+          type: BYTES32
+    nonIndexedParameterDefinitions:
+        - position: 3
+          type: UINT8
+        - position: 4
+          type: ADDRESS
+        - position: 5
+          type: ADDRESS
+        - position: 6
+          type: UINT8
+    correlationId:
+        type: NON_INDEXED_PARAMETER
+        index: 0
+  - id: ServiceAgreementConditionFulfilled
+    contractAddress: ${CONTRACT_ADDRESS:0x463879d3a318a6f692e00165fa4fd9461265b98a}
+    eventSpecification:
+      eventName: ConditionFulfilled
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: BYTES32
+        - position: 2
+          type: BYTES32
+    correlationId:
+        type: INDEXED_PARAMETER
+        index: 0
+  - id: ServiceAgreementAgreementFulfilled
+    contractAddress: ${CONTRACT_ADDRESS:0x463879d3a318a6f692e00165fa4fd9461265b98a}
+    eventSpecification:
+      eventName: AgreementFulfilled
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+        - position: 1
+          type: BYTES32
+        - position: 2
+          type: BYTES32
+    correlationId:
+        type: INDEXED_PARAMETER
+        index: 0
+  - id: ServiceAgreementSLATemplateRevoked
+    contractAddress: ${CONTRACT_ADDRESS:0x463879d3a318a6f692e00165fa4fd9461265b98a}
+    eventSpecification:
+      eventName: SLATemplateRevoked
+      indexedParameterDefinitions:
+        - position: 0
+          type: BYTES32
+      nonIndexedParameterDefinitions:
+        - position: 1
+          type: UINT8
+    correlationId:
+        type: INDEXED_PARAMETER
+        index: 0
+
