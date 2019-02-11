@@ -29,7 +29,11 @@ Tools, Documentation and Scripts to run the events monitoring tool
     ```terminal
     docker-compose up -d
     ```
-4. add connector with
+4. Force elastic search mapping by creating the index with
+   ```terminal
+   curl -X PUT http://localhost:9200/contract-events  -d @createIndex.json --header  "Content-Type: application/json"
+   ```
+5. add connector with
     ```terminal
     curl -v POST http://localhost:8083/connectors  -d @connector.json --header  "Content-Type: application/json"
     ```
@@ -38,17 +42,17 @@ Tools, Documentation and Scripts to run the events monitoring tool
     $sudo sysctl -w vm.max_map_count=262144
     ```
     After that restart elastic search, kafka connect and kibana
-5. Add a kibana dashboard. This sample dashboard will show an histogram of events emitted.
+6. Add a kibana dashboard. This sample dashboard will show an histogram of events emitted.
     ```terminal
     $curl -v POST localhost:5601/api/kibana/dashboards/import  -H 'kbn-xsrf:true' --header 'Content-type:application/json' -d @visualization.json
     ```
-6. Compile, test and package `eventeum`
+7. Compile, test and package `eventeum`
     ```terminal
     $cd eventeum-0.4.0
     $mvn clean package
     ```
-7. update `KeeperContracts` addresses in `eventeum-0.4.0/server/application.yml` with the proxy address it can be taken from `zos.dev-*.json` under `"oceanprotocol/ContractName":` or from the terminal where the deployment script was executed.
-8. run eventeum
+8. update `KeeperContracts` addresses in `eventeum-0.4.0/server/application.yml` with the proxy address it can be taken from `zos.dev-*.json` under `"oceanprotocol/ContractName":` or from the terminal where the deployment script was executed.
+9.  run eventeum
     ```terminal
     $export SPRING_DATA_MONGODB_HOST=localhost:27017
     $export ETHEREUM_NODE_URL=http://localhost:8545
